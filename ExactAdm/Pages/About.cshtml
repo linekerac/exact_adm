@@ -3,7 +3,38 @@
 @{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<form id="form">
+    <input type="email" id="email" placeholder="email" value="lineker@hotmail.com"><br>
+    <input type="password" id="password" placeholder="password" value="SenhaSecreta#2019">
+    <button>Entrar</button>
+</form>
+
+<script>
+    let email = document.querySelector("#email");
+    let password = document.querySelector("#password");
+    let form = document.querySelector("#form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let dados = {
+            email: email.value,
+            password: password.value
+        };
+        
+        fetch('https://localhost:44333/api/usuarios/login', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+        })
+            .then(function (response) {
+                console.log(response);
+                //return response.JSON()
+            })
+
+    })
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                                      

@@ -1,3 +1,8 @@
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.csproj.CoreCompileInputs.cache
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.RazorAssemblyInfo.cache
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.RazorAssemblyInfo.cs
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.AssemblyInfoInputs.cache
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.AssemblyInfo.cs
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.deps.json
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.runtimeconfig.json
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.runtimeconfig.dev.json
@@ -5,12 +10,6 @@ C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.pdb
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.Views.dll
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\bin\Debug\netcoreapp2.1\ExactAdm.Views.pdb
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.csprojAssemblyReference.cache
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.csproj.CoreCompileInputs.cache
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.RazorAssemblyInfo.cache
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.RazorAssemblyInfo.cs
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.AssemblyInfoInputs.cache
-C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.AssemblyInfo.cs
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.TagHelpers.input.cache
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.TagHelpers.output.cache
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.RazorCoreGenerate.cache
@@ -30,3 +29,4 @@ C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.dll
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.pdb
 C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.csproj.CopyComplete
+C:\Users\landrade.EXACTSALES\source\repos\ExactAdm\ExactAdm\obj\Debug\netcoreapp2.1\ExactAdm.csprojAssemblyReference.cache
