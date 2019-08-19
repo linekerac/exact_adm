@@ -4,37 +4,46 @@
     ViewData["Title"] = "About";
 }
 
-<form id="form">
-    <input type="email" id="email" placeholder="email" value="lineker@hotmail.com"><br>
-    <input type="password" id="password" placeholder="password" value="SenhaSecreta#2019">
-    <button>Entrar</button>
-</form>
+<div>
+    <form id="form">
+        <input type="email" id="email" placeholder="email"><br />
+        <input type="password" id="password" placeholder="password"><br />
+        <input type="button" name="submit" value="Enviar" onclick="Login()">
+    </form>
+</div>
 
 <script>
     let email = document.querySelector("#email");
     let password = document.querySelector("#password");
-    let form = document.querySelector("#form");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        let dados = {
-            email: email.value,
-            password: password.value
-        };
-        
-        fetch('https://localhost:44333/api/usuarios/login', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(dados)
+    var headers = {
+        "Content-Type": "application/json",
+        "Access-Control-Origin": "*"
+    }
+    
+    
+    function Login() {
+        var data = {
+            "email": email.value,
+            "password": password.value
+        }
+        fetch("https://localhost:44333/api/usuarios/login", {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
         })
             .then(function (response) {
-                console.log(response);
-                //return response.JSON()
+                return response.json();
             })
-
-    })
-</script>                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            .then(function (data) {
+                if (data.token) {
+                    window.location.href = "https://localhost:44333/";
+                    localStorage.setItem('token', data.token);
+                }
+                else {
+                    alert("");
+                }
+                
+            });
+    }
+</script>                                                                                                                                                                                                                                                                                                                                                                                                                          

@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\source\\repos\\ExactAdm\\ExactAdm\\ExactAdm.csproj",
+      "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\ExactAdm\\ExactAdm.csproj",
       "projectName": "ExactAdm",
-      "projectPath": "C:\\Users\\landrade.EXACTSALES\\source\\repos\\ExactAdm\\ExactAdm\\ExactAdm.csproj",
+      "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\ExactAdm\\ExactAdm.csproj",
       "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\landrade.EXACTSALES\\source\\repos\\ExactAdm\\ExactAdm\\obj\\",
+      "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\ExactAdm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
