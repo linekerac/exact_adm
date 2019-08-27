@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactAdm", "ExactAdm\ExactAdm.csproj", "{031A2797-B16D-4663-B449-9D7D35E58CBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExactAdm", "ExactAdm\ExactAdm.csproj", "{031A2797-B16D-4663-B449-9D7D35E58CBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{FBF4E627-F6FD-42D5-B1B2-430B2DC4D637}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{1E36CBCA-3211-4100-AAF9-ED1C36433334}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{B2319CA9-BCEB-4CBF-B565-DEDAF374EE4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{BE296005-7F47-4D95-91A3-4EB342C31332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactAdm.Infra.Data", "src\ExactAdm.Infra.Data\ExactAdm.Infra.Data.csproj", "{BD956F0E-C68D-493F-B381-BD97EFDB7717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactAdm.Domain", "src\ExactAdm.Domain\ExactAdm.Domain.csproj", "{28D8E799-E826-4E1F-86A2-E4A41AA1826F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExactAdm.WebApi", "src\ExactAdm.WebApi\ExactAdm.WebApi.csproj", "{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,27 @@ Global
 		{031A2797-B16D-4663-B449-9D7D35E58CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031A2797-B16D-4663-B449-9D7D35E58CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{031A2797-B16D-4663-B449-9D7D35E58CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD956F0E-C68D-493F-B381-BD97EFDB7717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD956F0E-C68D-493F-B381-BD97EFDB7717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD956F0E-C68D-493F-B381-BD97EFDB7717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD956F0E-C68D-493F-B381-BD97EFDB7717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D8E799-E826-4E1F-86A2-E4A41AA1826F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D8E799-E826-4E1F-86A2-E4A41AA1826F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D8E799-E826-4E1F-86A2-E4A41AA1826F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D8E799-E826-4E1F-86A2-E4A41AA1826F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE296005-7F47-4D95-91A3-4EB342C31332} = {B2319CA9-BCEB-4CBF-B565-DEDAF374EE4C}
+		{BD956F0E-C68D-493F-B381-BD97EFDB7717} = {BE296005-7F47-4D95-91A3-4EB342C31332}
+		{28D8E799-E826-4E1F-86A2-E4A41AA1826F} = {1E36CBCA-3211-4100-AAF9-ED1C36433334}
+		{12EADF6C-7EBE-4E5D-B848-14DDCA0145ED} = {FBF4E627-F6FD-42D5-B1B2-430B2DC4D637}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F7D6515-F85D-4C4E-A497-200C67D86512}

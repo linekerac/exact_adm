@@ -58,7 +58,7 @@ using ExactAdm;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(96, 303, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "60134dfc02b14bb8ba28569fee613116", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c426dd142234468e8d0e8de73236cc2e", async() => {
                 BeginContext(102, 290, true);
                 WriteLiteral(@"
     <title>Consuming JWT with Jquery and Vuejs</title>
@@ -82,12 +82,12 @@ using ExactAdm;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(401, 324, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "529963e9404d447ea9e96732a14a94bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7dca74e1677e48de9367d91d90bfa4d5", async() => {
                 BeginContext(407, 47, true);
                 WriteLiteral("\r\n    <h1> Consuming JWT with Jquery</h1>\r\n    ");
                 EndContext();
                 BeginContext(454, 260, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95f297fa5e86464f80727398b1182af8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f1cea220efd40a4b99f96e4c1d3274b", async() => {
                     BeginContext(470, 237, true);
                     WriteLiteral("\r\n        <input type=\"email\" name=\"email\" id=\"email\" value=\"lineker@hotmail.com\">\r\n        <input type=\"password\" name=\"password\" id=\"password\" value=\"SenhaSecreta#2019\">\r\n        <input type=\"submit\" name=\"submit\" value=\"Log In\">\r\n    ");
                     EndContext();
