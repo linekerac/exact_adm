@@ -8,9 +8,12 @@
 <div style="padding:50px;">
     @if (User.Identity.IsAuthenticated)
     {
-        <div class="row">
-            You are Logged in as <span style="font-size:large;color:forestgreen;">@User.Identity.Name</span>
-        </div>
+    <div class="row">
+        You are Logged in as
+        <span style="font-size:large;color:forestgreen;">
+            @User.Identity.Name
+        </span>
+    </div>
         <div class="row" style="padding-top:50px;">
             @Html.ActionLink("Log Off", "Logoff", "Home", null, new { @class = "btn btn-primary btn-lg rph-login-button" })
         </div>

@@ -44,7 +44,7 @@ namespace ExactAdm.WebApi
             });
 
             //Provide a secret key to Encrypt and Decrypt the Token
-            var SecretKey = Encoding.ASCII.GetBytes("YourKey-2374-OFFKDI940NG7:56753253-tyuw-5769-0921-kfirox29zoxv");
+            var SecretKey = Encoding.ASCII.GetBytes("3x4c7s4135-4d3-201x");
             //Configure JWT Token Authentication
             services.AddAuthentication(auth =>
             {
