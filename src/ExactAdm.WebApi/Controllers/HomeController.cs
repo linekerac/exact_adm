@@ -32,6 +32,27 @@ namespace ExactAdm.WebApi.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RegisterUser(User model)
+        {
+            var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID };
+            var result = await _userManager.CreateAsync(user, model.PASSWORD);
+            if (result.Succeeded)
+            {
+                return Redirect("~/Home/Login");
+            }
+            else
+            {
+                return BadRequest("Usuário ou senha inválidos");
+            }
+        }
+
+        [HttpPost]
         public async Task<IActionResult> LoginUser(User user)
         {
             var userInfo = await _userManager.FindByNameAsync(user.USERID);
