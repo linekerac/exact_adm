@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -27,29 +28,34 @@ namespace ExactAdm.WebApi.Controllers
             _signInManager = signInManager;
             _configuration = configuration;
         }
+
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegisterUser(User model)
+        public async Task<IActionResult> Register(RegisterUser model)
         {
             var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID };
-            var result = await _userManager.CreateAsync(user, model.PASSWORD);
+            var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddClaimAsync(user, new Claim("Setor", model.Setor));
                 return Redirect("~/Home/Login");
             }
             else
             {
-                return BadRequest("Usuário ou senha inválidos");
+                ModelState.AddModelError("", "O e-mail ou a senha inseridos estão incorretos");
             }
+            return View(model);
         }
 
         [HttpPost]
@@ -67,7 +73,7 @@ namespace ExactAdm.WebApi.Controllers
                 return BadRequest("Invalid credentials");
             }
 
-            var userToken = BuildToken(user);
+            var userToken = await BuildToken(user);
             if (userToken.Token != null)
             {
                 //Save token in session object
@@ -76,12 +82,19 @@ namespace ExactAdm.WebApi.Controllers
             return Redirect("~/Index");
         }
 
-        private UserToken BuildToken(User userInfo)
+        private async Task<UserToken> BuildToken(User userInfo)
         {
+            var user = await _userManager.FindByNameAsync(userInfo.USERID);
+            var userClaims = await _userManager.GetClaimsAsync(user);
+            userClaims.Add(new Claim(JwtRegisteredClaimNames.UniqueName, userInfo.USERID));
+            userClaims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
+            //userClaims.Add(new Claim(ClaimTypes.Role, "User"));
+            //userClaims.Add(new Claim(ClaimTypes.Role, "Admin"));
+            //userClaims.Add(new Claim(ClaimTypes.Role, "SuperAdmin"));
+
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.UniqueName, userInfo.USERID),
-                new Claim("Setor", "Setor_Teste"),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
@@ -91,7 +104,7 @@ namespace ExactAdm.WebApi.Controllers
             JwtSecurityToken token = new JwtSecurityToken(
                issuer: "http://localhost:45092/",
                audience: "http://localhost:45092/",
-               claims: claims,
+               claims: userClaims,
                expires: expiration,
                signingCredentials: creds);
             return new UserToken()

@@ -36,3 +36,6 @@ C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\n
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Logout.g.cshtml.cs
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\Gerente.g.cshtml.cs
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\Pv.g.cshtml.cs
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\Todos.g.cshtml.cs

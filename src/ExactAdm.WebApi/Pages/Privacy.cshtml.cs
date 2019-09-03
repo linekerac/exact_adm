@@ -2,7 +2,7 @@
 
 namespace ExactAdm.WebApi.Pages
 {
-    [ClaimsAuthorize("Setor", "Setor_Teste")]
+    [ClaimsAuthorize("Setor", "PV")]
     public class PrivacyModel : PageModel
     {
         public void OnGet()
