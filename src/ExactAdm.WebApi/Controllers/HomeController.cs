@@ -1,12 +1,13 @@
-﻿using ExactAdm.Domain.Models;
+﻿using ExactAdm.Domain;
+using ExactAdm.Domain.Models;
 using ExactAdm.Infra.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -35,12 +36,14 @@ namespace ExactAdm.WebApi.Controllers
             return View();
         }
 
+        [Authorize(Roles = Constantes.ROLEADMIN)]
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
+        [Authorize(Roles = Constantes.ROLEADMIN)]
         [HttpPost]
         public async Task<IActionResult> Register(RegisterUser model)
         {

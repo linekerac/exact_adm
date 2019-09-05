@@ -35,15 +35,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pv">Pv</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Gerente">Gerente</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Todos">Pv e Gerente</a>
-                        </li>
+                        @{
+                            if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    @Html.ActionLink("Register", "Register", "Home", null, new { @class = "nav-link text-dark" })
+                                </li>
+                            }
+                        }
                     </ul>
                 </div>
             </div>

@@ -4,6 +4,67 @@
     "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj": {}
   },
   "projects": {
+    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
+        "projectName": "ExactAdm.Application",
+        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
+        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,7 +144,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -103,6 +168,69 @@
               "target": "Package",
               "version": "[2.2.6, )"
             },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
+        "projectName": "ExactAdm.Infra.IoC",
+        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
+              },
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              },
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -145,11 +273,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
               },
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj"
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj"
               }
             }
           }
@@ -163,16 +291,36 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

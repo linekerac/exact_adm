@@ -56,7 +56,7 @@ using ExactAdm;
             WriteLiteral("\r\n<div>\r\n    ");
             EndContext();
             BeginContext(80, 250, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "312934b678d34c459a7940069035e89d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "626b9be666254ff78c9dca96d0ec3d5b", async() => {
                 BeginContext(96, 227, true);
                 WriteLiteral("\r\n        <input type=\"email\" id=\"email\" placeholder=\"email\"><br />\r\n        <input type=\"password\" id=\"password\" placeholder=\"password\"><br />\r\n        <input type=\"button\" name=\"submit\" value=\"Enviar\" onclick=\"Login()\">\r\n    ");
                 EndContext();

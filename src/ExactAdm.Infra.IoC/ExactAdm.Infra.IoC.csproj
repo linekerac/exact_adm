@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExactAdm.Application\ExactAdm.Application.csproj" />
+    <ProjectReference Include="..\ExactAdm.Domain\ExactAdm.Domain.csproj" />
+    <ProjectReference Include="..\ExactAdm.Infra.Data\ExactAdm.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

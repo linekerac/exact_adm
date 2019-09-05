@@ -1,5 +1,8 @@
+using AutoMapper;
+using ExactAdm.Infra.Application;
 using ExactAdm.Infra.Data;
 using ExactAdm.Infra.Data.Context;
+using ExactAdm.Infra.IoC;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +41,10 @@ namespace ExactAdm.WebApi
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            InjetorDependencias.Registrar(services);
+            services.AddAutoMapper(x => x.AddProfile(new MappingEntidade()));
+            
 
             services.AddSession(options => {
                 options.IdleTimeout = TimeSpan.FromMinutes(60);

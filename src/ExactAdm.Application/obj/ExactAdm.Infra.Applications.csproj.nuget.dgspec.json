@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Application\\ExactAdm.Infra.Applications.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
+        "projectName": "ExactAdm.Domain",
+        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
+        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Application\\ExactAdm.Infra.Applications.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Application\\ExactAdm.Infra.Applications.csproj",
+        "projectName": "ExactAdm.Infra.Applications",
+        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Application\\ExactAdm.Infra.Applications.csproj",
+        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
