@@ -7,3 +7,6 @@ C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\obj\Debug\n
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\obj\Debug\netcoreapp2.2\ExactAdm.Domain.AssemblyInfo.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\obj\Debug\netcoreapp2.2\ExactAdm.Domain.dll
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\obj\Debug\netcoreapp2.2\ExactAdm.Domain.pdb
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.Domain\obj\Debug\netcoreapp2.2\ExactAdm.Domain.csproj.CopyComplete

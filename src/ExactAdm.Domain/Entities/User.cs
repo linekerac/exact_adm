@@ -9,9 +9,11 @@ namespace ExactAdm.Domain.Entities
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
 
-        public User()
+        public User(int Id, string Nome, string Sobrenome)
         {
-
+            this.Id = Id;
+            this.Nome = Nome;
+            this.Sobrenome = Sobrenome;
         }
     }
 }

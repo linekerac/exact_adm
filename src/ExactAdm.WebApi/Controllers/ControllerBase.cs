@@ -50,7 +50,8 @@ namespace ExactAdm.WebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Incluir(EntidadeDTO dado)
+        [Route("Incluir")]
+        public virtual IActionResult Incluir(EntidadeDTO dado)
         {
             try
             {
