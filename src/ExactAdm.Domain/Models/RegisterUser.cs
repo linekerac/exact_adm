@@ -21,5 +21,6 @@ namespace ExactAdm.Domain.Models
         public string ConfirmPassword { get; set; }
 
         public string Setor { get; set; }
+        public bool Admin { get; set; }
     }
 }

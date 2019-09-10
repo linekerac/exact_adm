@@ -51,6 +51,11 @@ namespace ExactAdm.WebApi.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
+                if (model.Admin)
+                {
+                    await _userManager.AddClaimAsync(user, new Claim("Setor", Constantes.ROLEADMIN));
+                }
+
                 await _userManager.AddClaimAsync(user, new Claim("Setor", model.Setor));
                 return Redirect("~/Home/Login");
             }
@@ -62,7 +67,7 @@ namespace ExactAdm.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LoginUser(User user)
+        public async Task<IActionResult> LoginUser(UserTemp user)
         {
             var userInfo = await _userManager.FindByNameAsync(user.USERID);
             if (user == null)
@@ -85,7 +90,7 @@ namespace ExactAdm.WebApi.Controllers
             return Redirect("~/Index");
         }
 
-        private async Task<UserToken> BuildToken(User userInfo)
+        private async Task<UserToken> BuildToken(UserTemp userInfo)
         {
             var user = await _userManager.FindByNameAsync(userInfo.USERID);
             var userClaims = await _userManager.GetClaimsAsync(user);

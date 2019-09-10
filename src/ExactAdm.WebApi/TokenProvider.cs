@@ -48,16 +48,16 @@ namespace ExactAdm.WebApi
         }
 
         //Using hard coded collection list as Data Store for demo purpose. In reality, User data comes from Database or some other Data Source - JRozario
-        private List<User> UserList = new List<User>
+        private List<UserTemp> UserList = new List<UserTemp>
         {
-            new User { USERID = "jsmith@email.com", PASSWORD = "test", EMAILID = "jsmith@email.com", FIRST_NAME = "John", LAST_NAME = "Smith", PHONE = "356-735-2748", ACCESS_LEVEL = "Director", READ_ONLY = "true" },
-            new User { USERID = "srob@email.com", PASSWORD = "test", FIRST_NAME = "Steve", LAST_NAME = "Rob", EMAILID = "srob@email.com", PHONE = "567-479-8537", ACCESS_LEVEL = "Supervisor", READ_ONLY = "false" },
-            new User { USERID = "dwill@email.com", PASSWORD = "test", FIRST_NAME = "DJ", LAST_NAME = "Will", EMAILID = "dwill@email.com", PHONE = "599-306-6010", ACCESS_LEVEL = "Analyst", READ_ONLY = "false" },
-            new User { USERID = "JBlack@email.com", PASSWORD = "test", FIRST_NAME = "Joe", LAST_NAME = "Black", EMAILID = "JBlack@email.com", PHONE = "764-460-8610", ACCESS_LEVEL = "Analyst", READ_ONLY = "true" }
+            new UserTemp { USERID = "jsmith@email.com", PASSWORD = "test", EMAILID = "jsmith@email.com", FIRST_NAME = "John", LAST_NAME = "Smith", PHONE = "356-735-2748", ACCESS_LEVEL = "Director", READ_ONLY = "true" },
+            new UserTemp { USERID = "srob@email.com", PASSWORD = "test", FIRST_NAME = "Steve", LAST_NAME = "Rob", EMAILID = "srob@email.com", PHONE = "567-479-8537", ACCESS_LEVEL = "Supervisor", READ_ONLY = "false" },
+            new UserTemp { USERID = "dwill@email.com", PASSWORD = "test", FIRST_NAME = "DJ", LAST_NAME = "Will", EMAILID = "dwill@email.com", PHONE = "599-306-6010", ACCESS_LEVEL = "Analyst", READ_ONLY = "false" },
+            new UserTemp { USERID = "JBlack@email.com", PASSWORD = "test", FIRST_NAME = "Joe", LAST_NAME = "Black", EMAILID = "JBlack@email.com", PHONE = "764-460-8610", ACCESS_LEVEL = "Analyst", READ_ONLY = "true" }
         };
 
         //Using hard coded collection list as Data Store for demo. In reality, User data comes from Database or some other Data Source - JRozario
-        private IEnumerable<Claim> GetUserClaims(User user)
+        private IEnumerable<Claim> GetUserClaims(UserTemp user)
         {
             IEnumerable<Claim> claims = new Claim[]
                     {

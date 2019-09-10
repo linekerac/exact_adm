@@ -10,8 +10,8 @@ namespace ExactAdm.Infra.Data.Mapeamentos
         {
             base.Configure(builder);
             builder.ToTable("users");
-            builder.Property(c => c.Nome).IsRequired().HasColumnName("Nome").HasMaxLength(100);
-            builder.Property(c => c.Sobrenome).IsRequired().HasColumnName("Sobrenome");
+            builder.Property(c => c.USERID).IsRequired().HasColumnName("Nome").HasMaxLength(100);
+            builder.Property(c => c.PASSWORD).IsRequired().HasColumnName("Sobrenome");
         }
     }
 }
