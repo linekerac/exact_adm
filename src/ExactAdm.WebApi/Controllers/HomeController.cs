@@ -1,4 +1,7 @@
-﻿using ExactAdm.Domain;
+﻿using ExactAdm.Application.DTO;
+using ExactAdm.Application.Interfaces;
+using ExactAdm.Domain;
+using ExactAdm.Domain.Entities;
 using ExactAdm.Domain.Models;
 using ExactAdm.Infra.Data;
 using Microsoft.AspNetCore.Authorization;
@@ -21,13 +24,25 @@ namespace ExactAdm.WebApi.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
 
+        readonly protected IAppBase<User, UserDTO> app;
+
+
         public HomeController(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            IAppBase<User, UserDTO> app)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _configuration = configuration;
+            this.app = app;
+        }
+
+        [HttpGet]
+        public IActionResult Index()
+        {
+            var userDTO = app.SelecionarTodos(); 
+            return View(userDTO);
         }
 
         [HttpGet]
@@ -36,24 +51,25 @@ namespace ExactAdm.WebApi.Controllers
             return View();
         }
 
-        [Authorize(Roles = Constantes.ROLEADMIN)]
+        //[Authorize(Roles = Constantes.ROLEADMIN)]
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
-        [Authorize(Roles = Constantes.ROLEADMIN)]
+        //[Authorize(Roles = Constantes.ROLEADMIN)]
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterUser model)
+        public async Task<IActionResult> Register(UserDTO model)
         {
             var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
+                app.Incluir(model);
                 if (model.Admin)
                 {
-                    await _userManager.AddClaimAsync(user, new Claim("Setor", Constantes.ROLEADMIN));
+                    await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, Constantes.ROLEADMIN));
                 }
 
                 await _userManager.AddClaimAsync(user, new Claim("Setor", model.Setor));

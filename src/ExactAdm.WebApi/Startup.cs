@@ -1,5 +1,5 @@
 using AutoMapper;
-using ExactAdm.Infra.Application;
+using ExactAdm.Application;
 using ExactAdm.Infra.Data;
 using ExactAdm.Infra.Data.Context;
 using ExactAdm.Infra.IoC;

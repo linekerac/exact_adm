@@ -1,7 +1,7 @@
 ﻿using System;
+using ExactAdm.Application.DTO;
+using ExactAdm.Application.Interfaces;
 using ExactAdm.Domain.Entities;
-using ExactAdm.Infra.Application.DTO;
-using ExactAdm.Infra.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExactAdm.WebApi.Controllers
@@ -25,8 +25,8 @@ namespace ExactAdm.WebApi.Controllers
         {
             try
             {
-                var restaurantes = app.SelecionarTodos();
-                return new OkObjectResult(restaurantes);
+                var usuarios = app.SelecionarTodos();
+                return new OkObjectResult(usuarios);
             }
             catch (Exception ex)
             {
@@ -40,8 +40,8 @@ namespace ExactAdm.WebApi.Controllers
         {
             try
             {
-                var restaurantes = app.SelecionarPorId(id);
-                return new OkObjectResult(restaurantes);
+                var usuarios = app.SelecionarPorId(id);
+                return new OkObjectResult(usuarios);
             }
             catch (Exception ex)
             {

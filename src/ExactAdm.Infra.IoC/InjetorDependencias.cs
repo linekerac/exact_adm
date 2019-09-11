@@ -1,8 +1,8 @@
-﻿using ExactAdm.Domain.Interfaces.Repositories;
+﻿using ExactAdm.Application.Interfaces;
+using ExactAdm.Application.Services;
+using ExactAdm.Domain.Interfaces.Repositories;
 using ExactAdm.Domain.Interfaces.Services;
 using ExactAdm.Domain.Services;
-using ExactAdm.Infra.Application.Interfaces;
-using ExactAdm.Infra.Application.Services;
 using ExactAdm.Infra.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 

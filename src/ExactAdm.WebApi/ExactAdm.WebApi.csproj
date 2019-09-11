@@ -30,4 +30,9 @@
     <ProjectReference Include="..\ExactAdm.Infra.IoC\ExactAdm.Infra.IoC.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Views\User\" />
+  </ItemGroup>
+
 </Project>

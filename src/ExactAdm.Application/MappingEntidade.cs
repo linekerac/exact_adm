@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using ExactAdm.Application.DTO;
 using ExactAdm.Domain.Entities;
-using ExactAdm.Infra.Application.DTO;
 
-namespace ExactAdm.Infra.Application
+namespace ExactAdm.Application
 {
     public class MappingEntidade : Profile
     {

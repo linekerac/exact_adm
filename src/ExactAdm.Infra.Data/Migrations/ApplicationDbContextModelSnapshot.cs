@@ -19,6 +19,98 @@ namespace ExactAdm.Infra.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("ExactAdm.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("Id")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ACCESS_LEVEL");
+
+                    b.Property<bool>("Admin");
+
+                    b.Property<string>("EMAILID");
+
+                    b.Property<string>("FIRST_NAME");
+
+                    b.Property<string>("LAST_NAME");
+
+                    b.Property<string>("PASSWORD")
+                        .IsRequired()
+                        .HasColumnName("PASSWORD");
+
+                    b.Property<string>("PHONE");
+
+                    b.Property<string>("READ_ONLY");
+
+                    b.Property<string>("USERID")
+                        .IsRequired()
+                        .HasColumnName("USERID")
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("users");
+                });
+
+            modelBuilder.Entity("ExactAdm.Infra.Data.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AccessFailedCount");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed");
+
+                    b.Property<bool>("LockoutEnabled");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("SecurityStamp");
+
+                    b.Property<bool>("TwoFactorEnabled");
+
+                    b.Property<int?>("UserId");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256);
+
+                    b.Property<int?>("UsuarioId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUsers");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -61,57 +153,6 @@ namespace ExactAdm.Infra.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetRoleClaims");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("AccessFailedCount");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken();
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256);
-
-                    b.Property<bool>("EmailConfirmed");
-
-                    b.Property<bool>("LockoutEnabled");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("PasswordHash");
-
-                    b.Property<string>("PhoneNumber");
-
-                    b.Property<bool>("PhoneNumberConfirmed");
-
-                    b.Property<string>("SecurityStamp");
-
-                    b.Property<bool>("TwoFactorEnabled");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -180,6 +221,13 @@ namespace ExactAdm.Infra.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("ExactAdm.Infra.Data.ApplicationUser", b =>
+                {
+                    b.HasOne("ExactAdm.Domain.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
@@ -190,7 +238,7 @@ namespace ExactAdm.Infra.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
+                    b.HasOne("ExactAdm.Infra.Data.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -198,7 +246,7 @@ namespace ExactAdm.Infra.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
+                    b.HasOne("ExactAdm.Infra.Data.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -211,7 +259,7 @@ namespace ExactAdm.Infra.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
+                    b.HasOne("ExactAdm.Infra.Data.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -219,7 +267,7 @@ namespace ExactAdm.Infra.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser")
+                    b.HasOne("ExactAdm.Infra.Data.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

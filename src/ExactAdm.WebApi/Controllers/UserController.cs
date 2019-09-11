@@ -1,6 +1,6 @@
 ﻿using ExactAdm.Domain.Entities;
-using ExactAdm.Infra.Application.DTO;
-using ExactAdm.Infra.Application.Interfaces;
+using ExactAdm.Application.DTO;
+using ExactAdm.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 

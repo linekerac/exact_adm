@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
+using ExactAdm.Application.DTO;
+using ExactAdm.Application.Interfaces;
 using ExactAdm.Domain.Entities;
 using ExactAdm.Domain.Interfaces.Services;
-using ExactAdm.Infra.Application.DTO;
-using ExactAdm.Infra.Application.Interfaces;
 using System.Collections.Generic;
 
-namespace ExactAdm.Infra.Application.Services
+namespace ExactAdm.Application.Services
 {
     public class UserApp : ServiceAppBase<User, UserDTO>, IUserBase
     {

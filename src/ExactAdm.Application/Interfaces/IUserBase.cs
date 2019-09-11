@@ -1,8 +1,8 @@
-﻿using ExactAdm.Domain.Entities;
-using ExactAdm.Infra.Application.DTO;
+﻿using ExactAdm.Application.DTO;
+using ExactAdm.Domain.Entities;
 using System.Collections.Generic;
 
-namespace ExactAdm.Infra.Application.Interfaces
+namespace ExactAdm.Application.Interfaces
 {
     public interface IUserBase : IAppBase<User, UserDTO>
     {

@@ -1,4 +1,4 @@
-﻿namespace ExactAdm.Infra.Application.DTO
+﻿namespace ExactAdm.Application.DTO
 {
     public class DTOBase
     {

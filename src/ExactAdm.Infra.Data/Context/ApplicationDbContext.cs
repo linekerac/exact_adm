@@ -16,8 +16,8 @@ namespace ExactAdm.Infra.Data.Context
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-            //Database.GetPendingMigrations().Count() > 0)
-            //    Database.Migrate();
+            if(Database.GetPendingMigrations().Count() > 0)
+                Database.Migrate();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
