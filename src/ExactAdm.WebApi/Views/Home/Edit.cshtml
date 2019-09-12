@@ -1,7 +1,8 @@
 ﻿@model ExactAdm.Application.DTO.UserDTO
 
 @{
-    ViewBag.Title = "Edit";
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <h2>Edit</h2>
@@ -42,5 +43,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index", "Home")
 </div>

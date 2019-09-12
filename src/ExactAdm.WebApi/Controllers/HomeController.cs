@@ -38,6 +38,32 @@ namespace ExactAdm.WebApi.Controllers
             this.app = app;
         }
 
+        // GET: Usuario/Details/5
+        public ActionResult Details(int id)
+        {
+            var usuario = app.SelecionarPorId(id);
+
+            return View(usuario);
+        }
+
+        // GET: Usuario/Delete/5
+        public ActionResult Delete(int id)
+        {
+            var usuario = app.SelecionarPorId(id);
+
+            return View(usuario);
+        }
+
+        // POST: Usuario/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            app.Excluir(id);
+
+            return RedirectToAction("Index");
+        }
+
         // GET: Usuario/Edit/5
         public ActionResult Edit(int id)
         {
@@ -60,6 +86,7 @@ namespace ExactAdm.WebApi.Controllers
         }
 
         [HttpGet]
+        [Route("Index")]
         public IActionResult Index()
         {
             var userDTO = app.SelecionarTodos(); 
