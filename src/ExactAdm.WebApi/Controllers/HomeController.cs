@@ -38,6 +38,27 @@ namespace ExactAdm.WebApi.Controllers
             this.app = app;
         }
 
+        // GET: Usuario/Edit/5
+        public ActionResult Edit(int id)
+        {
+            var usuario = app.SelecionarPorId(id);
+
+            return View(usuario);
+        }
+
+        // POST: Usuario/Edit/5
+        [HttpPost]
+        public ActionResult Edit(UserDTO pUserDTO)
+        {
+            if (ModelState.IsValid)
+            {
+                //app.Alterar(pUserDTO);
+                return RedirectToAction("Index");
+            }
+            app.Alterar(pUserDTO);
+            return View(pUserDTO);
+        }
+
         [HttpGet]
         public IActionResult Index()
         {

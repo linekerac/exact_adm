@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj": {}
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
         "projectName": "ExactAdm.Application",
-        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
-        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\obj\\",
+        "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj",
+        "packagesPath": "C:\\Users\\Lineker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lineker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,14 +25,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
               }
             }
           }
@@ -65,20 +64,20 @@
         }
       }
     },
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
         "projectName": "ExactAdm.Domain",
-        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
-        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj",
+        "packagesPath": "C:\\Users\\Lineker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lineker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +85,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -122,20 +120,20 @@
         }
       }
     },
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj",
         "projectName": "ExactAdm.Infra.Data",
-        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Lineker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lineker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -143,14 +141,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
               }
             }
           }
@@ -187,20 +184,20 @@
         }
       }
     },
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
         "projectName": "ExactAdm.Infra.IoC",
-        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
-        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\obj\\",
+        "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Lineker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lineker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -208,20 +205,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
               },
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Domain\\ExactAdm.Domain.csproj"
               },
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.Data\\ExactAdm.Infra.Data.csproj"
               }
             }
           }
@@ -250,20 +246,20 @@
         }
       }
     },
-    "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj": {
+    "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj",
         "projectName": "ExactAdm.WebApi",
-        "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj",
-        "packagesPath": "C:\\Users\\landrade.EXACTSALES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\obj\\",
+        "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\ExactAdm.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Lineker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\landrade.EXACTSALES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lineker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -271,17 +267,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://tfs.exactsales.com.br/EXACT/_packaging/ExactSources/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Application\\ExactAdm.Application.csproj"
               },
-              "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
-                "projectPath": "C:\\Users\\landrade.EXACTSALES\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj"
+              "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\Lineker\\Documents\\exact_adm\\src\\ExactAdm.Infra.IoC\\ExactAdm.Infra.IoC.csproj"
               }
             }
           }
