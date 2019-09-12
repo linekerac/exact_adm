@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExactAdm.Infra.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190911175014_exact_teste")]
-    partial class exact_teste
+    [Migration("20190912182256_exact_db")]
+    partial class exact_db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -91,8 +91,6 @@ namespace ExactAdm.Infra.Data.Migrations
 
                     b.Property<bool>("TwoFactorEnabled");
 
-                    b.Property<int?>("UserId");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256);
 
@@ -108,7 +106,7 @@ namespace ExactAdm.Infra.Data.Migrations
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("AspNetUsers");
                 });
@@ -225,9 +223,9 @@ namespace ExactAdm.Infra.Data.Migrations
 
             modelBuilder.Entity("ExactAdm.Infra.Data.ApplicationUser", b =>
                 {
-                    b.HasOne("ExactAdm.Domain.Entities.User", "User")
+                    b.HasOne("ExactAdm.Domain.Entities.User", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UsuarioId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

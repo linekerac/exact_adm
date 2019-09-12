@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ExactAdm.Infra.Data.Migrations
 {
-    public partial class exact_teste : Migration
+    public partial class exact_db : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -83,15 +83,14 @@ namespace ExactAdm.Infra.Data.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    UsuarioId = table.Column<int>(nullable: true),
-                    UserId = table.Column<int>(nullable: true)
+                    UsuarioId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_AspNetUsers_users_UsuarioId",
+                        column: x => x.UsuarioId,
                         principalTable: "users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -222,9 +221,9 @@ namespace ExactAdm.Infra.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_UserId",
+                name: "IX_AspNetUsers_UsuarioId",
                 table: "AspNetUsers",
-                column: "UserId");
+                column: "UsuarioId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

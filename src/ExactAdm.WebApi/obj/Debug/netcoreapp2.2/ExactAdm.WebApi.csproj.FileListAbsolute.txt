@@ -82,6 +82,8 @@ C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\n
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\Todos.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Delete.g.cshtml.cs
+C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
@@ -94,5 +96,3 @@ C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\n
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\ExactAdm.WebApi.csproj.CopyComplete
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\ExactAdm.WebApi.dll
 C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\ExactAdm.WebApi.pdb
-C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Delete.g.cshtml.cs
-C:\Users\landrade.EXACTSALES\Documents\exact_adm\src\ExactAdm.WebApi\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs

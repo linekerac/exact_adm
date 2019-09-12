@@ -4,6 +4,7 @@ using ExactAdm.Domain;
 using ExactAdm.Domain.Entities;
 using ExactAdm.Domain.Models;
 using ExactAdm.Infra.Data;
+using ExactAdm.Infra.Data.Context;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,7 @@ namespace ExactAdm.WebApi.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
+        private readonly ApplicationDbContext _contexto;
 
         readonly protected IAppBase<User, UserDTO> app;
 
@@ -30,12 +33,14 @@ namespace ExactAdm.WebApi.Controllers
         public HomeController(UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IConfiguration configuration,
-            IAppBase<User, UserDTO> app)
+            IAppBase<User, UserDTO> app,
+            ApplicationDbContext contexto)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _configuration = configuration;
             this.app = app;
+            _contexto = contexto;
         }
 
         // GET: Usuario/Details/5
@@ -110,7 +115,11 @@ namespace ExactAdm.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserDTO model)
         {
-            var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID };
+            app.Incluir(model);
+            var x = _contexto.Users.Where(y => y.Id == model.Id).FirstOrDefault();
+
+            var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID,
+            UsuarioId = model.Id};
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
