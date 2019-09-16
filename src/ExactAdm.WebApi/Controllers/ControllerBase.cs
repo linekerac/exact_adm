@@ -55,7 +55,8 @@ namespace ExactAdm.WebApi.Controllers
         {
             try
             {
-                return new OkObjectResult(app.Incluir(dado));
+                app.Incluir(dado);
+                return new OkObjectResult("Ok");
             }
             catch (Exception ex)
             {

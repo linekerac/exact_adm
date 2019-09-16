@@ -36,9 +36,10 @@ namespace ExactAdm.Application.Services
             servico.Excluir(iMapper.Map<TEntidade>(entidade));
         }
 
-        public int Incluir(TEntidadeDTO entidade)
+        public void Incluir(TEntidadeDTO entidade)
         {
-            return servico.Incluir(iMapper.Map<TEntidade>(entidade));
+            var t = iMapper.Map<TEntidadeDTO, TEntidade>(entidade);
+            servico.Incluir(t);
         }
 
         public TEntidadeDTO SelecionarPorId(int id)

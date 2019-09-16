@@ -44,12 +44,11 @@ namespace ExactAdm.Infra.Data.Repositories
             contexto.SendChanges();
         }
 
-        public int Incluir(TEntidade entidade)
+        public void Incluir(TEntidade entidade)
         {
             contexto.InitTransacao();
-            var id = contexto.Set<TEntidade>().Add(entidade).Entity.Id;
+            contexto.Set<TEntidade>().Add(entidade);
             contexto.SendChanges();
-            return id;
         }
 
         public TEntidade SelecionarPorId(int id)

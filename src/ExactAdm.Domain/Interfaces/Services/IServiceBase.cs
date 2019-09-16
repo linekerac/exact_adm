@@ -8,7 +8,7 @@ namespace ExactAdm.Domain.Interfaces.Services
     public interface IServiceBase<TEntidade>
         where TEntidade : EntidadeBase
     {
-        int Incluir(TEntidade entidade);
+        void Incluir(TEntidade entidade);
         void Excluir(int id);
         void Excluir(TEntidade entidade);
         void Alterar(TEntidade entidade);

@@ -29,9 +29,9 @@ namespace ExactAdm.Domain.Services
             repositorio.Excluir(entidade);
         }
 
-        public int Incluir(TEntidade entidade)
+        public void Incluir(TEntidade entidade)
         {
-            return repositorio.Incluir(entidade);
+            repositorio.Incluir(entidade);
         }
 
         public TEntidade SelecionarPorId(int id)

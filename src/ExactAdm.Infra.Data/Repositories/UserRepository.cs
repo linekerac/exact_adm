@@ -10,5 +10,6 @@ namespace ExactAdm.Infra.Data.Repositories
             : base(contexto)
         {
         }
+
     }
 }

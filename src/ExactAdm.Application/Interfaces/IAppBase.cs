@@ -8,7 +8,7 @@ namespace ExactAdm.Application.Interfaces
         where TEntidade : EntidadeBase
         where TEntidadeDTO : DTOBase
     {
-        int Incluir(TEntidadeDTO entidade);
+        void Incluir(TEntidade entidade);
         void Excluir(int id);
         void Excluir(TEntidadeDTO entidade);
         void Alterar(TEntidadeDTO entidade);

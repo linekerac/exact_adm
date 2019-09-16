@@ -11,7 +11,7 @@ namespace ExactAdm.Infra.Data.Mapeamentos
             base.Configure(builder);
             builder.ToTable("users");
             builder.Property(c => c.USERID).IsRequired().HasColumnName("USERID").HasMaxLength(100);
-            builder.Property(c => c.PASSWORD).IsRequired().HasColumnName("PASSWORD");
+            builder.Property(c => c.Password).IsRequired().HasColumnName("PASSWORD");
         }
     }
 }

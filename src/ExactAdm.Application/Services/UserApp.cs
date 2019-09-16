@@ -15,7 +15,6 @@ namespace ExactAdm.Application.Services
         {
             _usuarioService = servico;
         }
-
         public IEnumerable<User> ObterUsuariosAdmin()
         {
             return _usuarioService.ObterUsuariosAdmin(_usuarioService.SelecionarTodos());

@@ -1,4 +1,5 @@
-﻿using ExactAdm.Application.DTO;
+﻿using AutoMapper;
+using ExactAdm.Application.DTO;
 using ExactAdm.Application.Interfaces;
 using ExactAdm.Domain;
 using ExactAdm.Domain.Entities;
@@ -26,6 +27,7 @@ namespace ExactAdm.WebApi.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
         private readonly ApplicationDbContext _contexto;
+        protected readonly IMapper _iMapper;
 
         readonly protected IAppBase<User, UserDTO> app;
 
@@ -34,13 +36,14 @@ namespace ExactAdm.WebApi.Controllers
             SignInManager<ApplicationUser> signInManager,
             IConfiguration configuration,
             IAppBase<User, UserDTO> app,
-            ApplicationDbContext contexto)
+            ApplicationDbContext contexto, IMapper mapper)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _configuration = configuration;
             this.app = app;
             _contexto = contexto;
+            _iMapper = mapper;
         }
 
         // GET: Usuario/Details/5
@@ -115,8 +118,10 @@ namespace ExactAdm.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserDTO model)
         {
-            app.Incluir(model);
-            var x = _contexto.Users.Where(y => y.Id == model.Id).FirstOrDefault();
+            var userObject = _iMapper.Map<UserDTO, User>(model);
+            var userObject2 = model.ToUser();
+
+            app.Incluir(userObject);
 
             var user = new ApplicationUser { UserName = model.USERID, Email = model.USERID,
             UsuarioId = model.Id};
